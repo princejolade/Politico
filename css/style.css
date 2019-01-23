@@ -27,10 +27,9 @@
 .form-container {
     background-color: white;
     width: 320px;
-    margin: auto auto;
+    margin: 10% auto;
     border: 0.0016rem solid green;
     position: relative;
-    top: 10%;
     box-shadow: 0 0 1rem 0.1rem green;
     height: auto;
 }
@@ -38,6 +37,11 @@
 form {
     position: relative;
     height: 100%;
+}
+
+form > div {
+    width: 100%;
+    margin: auto
 }
 
 form input:first-child{
@@ -81,7 +85,7 @@ input {
     width: 93.5%;
     font-size: 1rem;
     padding: 4%;
-    margin: 10% auto;
+    margin: 4% auto;
     border-radius: 0.3125rem;
     border: solid 0.0625rem #ccc;
 }
@@ -93,13 +97,39 @@ input:hover{
 input:focus{
     border: solid green 0.125rem;
     border-radius: 0.3125rem;
+    outline: none;
+    /*background: rgb(230, 255, 230)*/
 }
+
+.warning {
+    display: none;
+}
+
+.fs {
+    position: relative;
+}
+
+.fs {
+    display: inline;
+    visibility: hidden;
+    color: green;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    position: relative;
+    bottom : -1.3rem;
+    margin: 0 1.5rem;
+    background: white;
+}
+
+
 
 .forgot, .sign-up {
     display: block;
     font-family: sans-serif;
     font-size: 0.9375rem;
     margin-left: 5%;
+    margin-top: 7%;
     color: green;
     text-decoration: none;
     font-weight: bold;
@@ -127,8 +157,22 @@ input:focus{
     color: white;
     margin-right: 5%;
     margin-top: 12%;
-    border: none;
+    border: solid #ccc 0.625rem;
     background-color: green;
-    border-radius: 0.3125rem;
     outline: none;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1023px){
+    .form-container {
+        width: 380px;
+        max-width: 400px;
+        top: 0.7%;
+    }
+}
+
+@media screen and (min-width: 720px){
+    .form-container {
+        max-width: 420px;
+    }
 }
