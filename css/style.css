@@ -2,11 +2,13 @@
 * {
     padding: 0;
     margin: 0;
+    border: none;
     box-sizing: border-box;
 }
 
 :root, body, .container {
     height: 100%;
+    position: relative;
 }
 
 .container {
@@ -26,12 +28,13 @@
 
 .form-container {
     background-color: white;
-    width: 320px;
+    width: 100%;
     margin: 10% auto;
-    border: 0.0016rem solid green;
+    border: transparent;
     position: relative;
-    box-shadow: 0 0 1rem 0.1rem green;
+    box-shadow: 0 0 0 0;
     height: auto;
+    min-height: 20.25rem;
 }
 
 form {
@@ -88,6 +91,7 @@ input {
     margin: 4% auto;
     border-radius: 0.3125rem;
     border: solid 0.0625rem #ccc;
+    transition: 500ms cubic-bezier(.2,.2,.4,-3);
 }
 
 input:hover{
@@ -98,9 +102,25 @@ input:focus{
     border: solid green 0.125rem;
     border-radius: 0.3125rem;
     outline: none;
+    transition: 300ms cubic-bezier(.2,.2,.7,-1)
     /*background: rgb(230, 255, 230)*/
 }
-
+.eye-icon{
+    content: url("../img/eye-hide.png");
+    display: inline;
+    width: 2.95rem;
+    float: right;
+    position: relative;
+    top: -4rem;
+    right: 0.8rem;
+    cursor: pointer;
+    border-top-right-radius: 0.3125rem;
+    border-bottom-right-radius: 0.3125rem;
+}
+.eye-icon:hover {
+    background: rgba(242, 242, 242, 0.7);
+    transition: background-color 300ms ease-in;
+}
 .warning {
     display: none;
 }
@@ -125,18 +145,22 @@ input:focus{
 
 
 .forgot, .sign-up {
-    display: block;
+    display: inline-block;
     font-family: sans-serif;
     font-size: 0.9375rem;
-    margin-left: 5%;
+    margin-left: 2.4%;
     margin-top: 7%;
     color: green;
+    padding: 2%;
     text-decoration: none;
     font-weight: bold;
 }
 
+.forgot:hover, .sign-up:hover {
+    background: rgba(242, 242, 242, 0.7);
+}
+
 .sign-up{
-    display: inline-block;
     margin-top: 7%;
     margin-bottom: 20%;
 }
@@ -150,29 +174,43 @@ input:focus{
 }
 
 #sign-in {
-    width: 21%;
     float: right;
     padding: 3%;
     font-size: 0.9375rem;
     color: white;
-    margin-right: 5%;
-    margin-top: 12%;
-    border: solid #ccc 0.625rem;
+    border: solid #ccc 0.0625rem;
     background-color: green;
     outline: none;
     cursor: pointer;
+    margin-right: 3%;
+    margin-top: 15%;
+    width: 25%;
+    transition: 500ms ease-in;
+}
+
+#sign-in:hover{
+    border-radius: 0.32rem;
+}
+
+
+
+@media screen and (min-width: 719px){
+    .form-container {
+        max-width: 420px;
+        margin-top: 3%;
+        border:solid 0.04rem green ;
+        box-shadow: 0 0 1rem 0.1rem green;
+    }
 }
 
 @media screen and (min-width: 1023px){
     .form-container {
         width: 380px;
         max-width: 400px;
-        top: 0.7%;
     }
-}
-
-@media screen and (min-width: 720px){
-    .form-container {
-        max-width: 420px;
+    .eye-icon{
+        width: 2.83rem;
+        top: -4.0rem;
+        right: 0.89rem;
     }
 }
