@@ -3,6 +3,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="../css/style.css"/>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
         <title>Politico - Sign In</title>
     </head>
     <body>
@@ -12,15 +13,18 @@
                     <p class="logo">Politico</p>
                 </div>
                 <p class="note">Sign in</p>
+                <div class="no-js-warning"></div>
                 <form class="cf" accept-charset="utf-8" method="post">
-                    <fieldset>
-                        <legend>Username</legend>
-                        <input type="text" id="username" name="username" placeholder="Email or username" />
-                    </fieldset>
-                    <fieldset>
-                        <legend> Password </legend>
+                    <div class="fs-container">
+                        <div class="fs" id="user-fs">Email or username</div>
+                        <input type="text" id="username" name="username" autocomplete="no" placeholder="Email or username" />
+                    </div>
+                    <div class="warning"></div>
+                    <div class="fs-container">
+                        <div class="fs" id="pass-fs">Password</div>
                         <input type="password" id="pass" name="password" placeholder="Password" />
-                    </fieldset>
+                        <div class="eye-icon"></div>
+                    </div>
                     <a class='forgot' href="#">Forgot email or password?</a>
                     <p class="new-user">Don't have an account yet?</p>
                     <a class='sign-up' href="./sign_up.htm">Create an account</a>
