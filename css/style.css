@@ -80,15 +80,20 @@ form input:first-child{
     color: black;
     font-family:sans-serif;
     text-align: center;
-    font-size: 120%;
+    font-size: 1.3rem;
+    white-space: nowrap;
 }
 
+.fs-container {
+    width: 93.5%;
+    margin: 4% auto;
+    position: relative;
+}
 input {
     display: block;
-    width: 93.5%;
+    width: 100%;
     font-size: 1rem;
     padding: 4%;
-    margin: 4% auto;
     border-radius: 0.3125rem;
     border: solid 0.0625rem #ccc;
     transition: 500ms cubic-bezier(.2,.2,.4,-3);
@@ -107,12 +112,12 @@ input:focus{
 }
 .eye-icon{
     content: url("../img/eye-hide.png");
-    display: inline;
-    width: 2.95rem;
+    display: inline-block;
+    width: 14.7%;
     float: right;
     position: relative;
-    top: -4rem;
-    right: 0.8rem;
+    margin-top: -14.8%;
+    right: 0;
     cursor: pointer;
     border-top-right-radius: 0.3125rem;
     border-bottom-right-radius: 0.3125rem;
@@ -126,23 +131,17 @@ input:focus{
 }
 
 .fs {
-    position: relative;
-}
-
-.fs {
     display: inline;
-    visibility: hidden;
+    position: relative;
+    visibility: visible;
     color: green;
     font-family: sans-serif;
     font-size: 0.7rem;
     font-weight: bold;
-    position: relative;
-    bottom : -1.3rem;
-    margin: 0 1.5rem;
+    bottom : -0.5rem;
+    margin-left: 4%;
     background: white;
 }
-
-
 
 .forgot, .sign-up {
     display: inline-block;
