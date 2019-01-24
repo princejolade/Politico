@@ -6,12 +6,6 @@
     }
 
     @media screen and (min-width: 768px) {
-        .form-container {
-            min-width: 468px;
-        }
-        .fs-container {
-            margin-bottom: 1%;
-        }
 
         .name {
             display: inline-block;
@@ -23,11 +17,4 @@
             padding: 8%;
         }
 
-        .eye-icon {
-            position: absolute;
-            float: none;
-            width: 25%;
-            right: 0;
-            top: 69.5%;
-        }
     }
