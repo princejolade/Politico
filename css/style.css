@@ -29,10 +29,10 @@
 .form-container {
     background-color: white;
     width: 100%;
-    margin: 10% auto;
+    margin: 20% auto;
     border: transparent;
     position: relative;
-    box-shadow: 0 0 0 0;
+    border-radius: 1rem;
     height: auto;
     min-height: 20.25rem;
 }
@@ -113,11 +113,10 @@ input:focus{
 .eye-icon{
     content: url("../img/eye-hide.png");
     display: inline-block;
-    width: 14.7%;
-    float: right;
-    position: relative;
-    margin-top: -14.8%;
+    position: absolute;
+    width: 2.9rem;
     right: 0;
+    top: 27.5%;
     cursor: pointer;
     border-top-right-radius: 0.3125rem;
     border-bottom-right-radius: 0.3125rem;
@@ -193,23 +192,23 @@ input:focus{
 
 
 
-@media screen and (min-width: 719px){
+@media screen and (min-width: 768px){
     .form-container {
         max-width: 420px;
-        margin-top: 3%;
-        border:solid 0.04rem green ;
-        box-shadow: 0 0 1rem 0.1rem green;
+        border:solid 0.04rem #ccc ;
+
     }
 }
 
 @media screen and (min-width: 1023px){
     .form-container {
         width: 380px;
-        max-width: 400px;
+        min-width: 650px;
     }
-    .eye-icon{
-        width: 2.83rem;
-        top: -4.0rem;
-        right: 0.89rem;
+
+    .eye-icon {
+        width: 4.1rem;
+        top: 23%;
     }
 }
+
