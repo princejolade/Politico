@@ -3,7 +3,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
     <title>Politico - Sign In</title>
 </head>
 <body>
@@ -17,19 +17,20 @@
         <form class="cf" accept-charset="utf-8" method="post">
             <div class="fs-container">
                 <div class="fs" id="user-fs">Email or username</div>
-                <input type="text" id="username" name="username" autocomplete="no" placeholder="Email or username" />
+                <input class="input" type="text" id="user" name="username" autocomplete="no" placeholder="Email or username" />
             </div>
             <div class="fs-container">
                 <div class="fs" id="pass-fs">Password</div>
-                <input type="password" id="pass" name="password" placeholder="Password" />
+                <input class="input" type="password" id="pass" name="password" placeholder="Password" />
                 <div class="eye-icon"></div>
             </div>
             <a class='forgot' href="#">Forgot email or password?</a>
             <p class="new-user">Don't have an account yet?</p>
             <a class='sign-up' href="./sign_up.htm">Create an account</a>
-            <button id="sign-in">Sign in</button>
+            <input type="button" id="sign-in" value="submit">
         </form>
     </div>
 </div>
+<script src="../js/sign_in.js"></script>
 </body>
 </html>
