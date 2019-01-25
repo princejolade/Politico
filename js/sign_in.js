@@ -34,11 +34,15 @@ sign_in_button.value = 'Next';
 
 let input = document.getElementsByClassName('input');
 Array.prototype.slice.call(input).forEach( e => {
+    let placeholder;
     e.addEventListener('focus', () => {
         e.previousElementSibling.style.visibility = 'visible';
+        placeholder = e.getAttribute('placeholder');
+        e.removeAttribute('placeholder');
     });
     e.addEventListener('blur', () => {
         e.previousElementSibling.style.visibility = 'hidden';
+        e.setAttribute('placeholder', placeholder);
     });
 });
 
