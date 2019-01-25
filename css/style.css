@@ -108,8 +108,7 @@ input:focus{
     border: solid green 0.125rem;
     border-radius: 0.3125rem;
     outline: none;
-    transition: 300ms cubic-bezier(.2,.2,.7,-1)
-    /*background: rgb(230, 255, 230)*/
+    transition: 300ms cubic-bezier(.2,.2,.7,-1);
 }
 .eye-icon{
     content: url("../img/eye-show.svg");
