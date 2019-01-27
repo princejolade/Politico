@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
-    <title>Politico - Sign In</title>
-</head>
-<body>
-<div class="container">
-    <div class="form-container">
-        <div class="pre-logo">
-            <p class="logo">Politico</p>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1"/>
+        <title>Politico - Sign In</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <div class="pre-logo">
+                    <p class="logo">Politico</p>
+                </div>
+                <p class="note">Sign in</p>
+                <div class="no-js-warning"></div>
+                <form class="cf" accept-charset="utf-8" method="post">
+                    <div class="fs-container">
+                        <div class="fs" id="user-fs">Email or username</div>
+                        <input class="input" type="text" id="user" name="username" autocomplete="no" placeholder="Email or username" />
+                    </div>
+                    <div class="fs-container">
+                        <div class="fs" id="pass-fs">Password</div>
+                        <input class="input" type="password" id="pass" name="password" placeholder="Password" />
+                        <div class="eye-icon"></div>
+                    </div>
+                    <a class='forgot' href="#">Forgot password?</a>
+                    <p class="new-user">Don't have an account yet?</p>
+                    <a class='sign-up' href="./sign_up.htm">Create an account</a>
+                    <input type="button" id="sign-in" value="submit">
+                </form>
+            </div>
         </div>
-        <p class="note">Sign in</p>
-        <div class="no-js-warning"></div>
-        <form class="cf" accept-charset="utf-8" method="post">
-            <div class="fs-container">
-                <div class="fs" id="user-fs">Email or username</div>
-                <input class="input" type="text" id="user" name="username" autocomplete="no" placeholder="Email or username" />
-            </div>
-            <div class="fs-container">
-                <div class="fs" id="pass-fs">Password</div>
-                <input class="input" type="password" id="pass" name="password" placeholder="Password" />
-                <div class="eye-icon"></div>
-            </div>
-            <a class='forgot' href="#">Forgot email or password?</a>
-            <p class="new-user">Don't have an account yet?</p>
-            <a class='sign-up' href="./sign_up.htm">Create an account</a>
-            <input type="button" id="sign-in" value="submit">
-        </form>
-    </div>
-</div>
-<script src="../js/sign_in.js"></script>
-</body>
+    <script src="../js/sign_in.js"></script>
+    </body>
 </html>

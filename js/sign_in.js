@@ -14,6 +14,7 @@ Array.prototype.slice.call(eye_icons).forEach( e => {
         }
 
     });
+
 });
 let back_button = document.createElement('span');
 back_button.innerText = "<";
@@ -55,3 +56,4 @@ sign_in_button.addEventListener("click", () => {
         form_container.appendChild(back_button);
     }
 });
+
